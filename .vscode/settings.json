@@ -1,0 +1,23 @@
+{
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "settings.cycle": [
+        {
+            "id": "lineNumbers",
+            "values": [
+                {
+                    "editor.lineNumbers": "off",
+                    "editor.folding": false,
+                    "editor.glyphMargin": false,
+                    "workbench.activityBar.visible": false
+                },
+                {
+                    "editor.lineNumbers": "on",
+                    "editor.folding": true,
+                    "editor.glyphMargin": true,
+                    "workbench.activityBar.visible": true
+                },
+            ]
+        }
+    ]
+}

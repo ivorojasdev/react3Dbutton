@@ -1,0 +1,58 @@
+.explode {
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .star {
+        position: absolute;
+        margin: 2rem 0;
+        border-left: 4rem solid transparent;
+        border-right: 4rem solid transparent;
+        border-bottom: 2.8rem solid yellow;
+        animation: spin 1s linear infinite;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -1.8rem;
+            left: -2.6rem;
+            display: block;
+            height: 0;
+            width: 0;
+            border-left: 1.2rem solid transparent;
+            border-right: 1.2rem solid transparent;
+            border-bottom: 3.2rem solid yellow;
+            transform: rotate(-35deg);
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: .12rem;
+            left: -4.2rem;
+            display: block;
+            width: 0rem;
+            height: 0rem;
+            border-left: 4rem solid transparent;
+            border-right: 4rem solid transparent;
+            border-bottom: 2.8rem solid yellow;
+            transform: rotate(-70deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: scale(1, 1) rotate(0deg);
+        }
+
+        50% {
+            transform: scale(1.7, 1.7) rotate(180deg);
+        }
+
+        100% {
+            transform: scale(1, 1) rotate(360deg);
+        }
+    }
+}
